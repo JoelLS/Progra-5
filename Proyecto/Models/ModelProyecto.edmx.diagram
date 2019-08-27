@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5e7c6599cf1b4ab6b36c537f14650fc1" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Canton" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Categoria" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Cita" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Cliente" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Distrito" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Localizaciones" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Provincia" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="INDEPENDENT_EMPLOYEE_DBModel.Usuario" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Canton_Provincia" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Distrito_Canton" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Usuario_Canton" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Usuario_Categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Cita_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Usuario_Cita1" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Cliente_Localizaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Usuario_Distrito" ManuallyRouted="false" />
+        <AssociationConnector Association="INDEPENDENT_EMPLOYEE_DBModel.FK_Usuario_Provincia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
