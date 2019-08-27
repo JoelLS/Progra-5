@@ -16,8 +16,18 @@ namespace Proyecto.Controllers
         private INDEPENDENT_EMPLOYEE_DBEntities db = new INDEPENDENT_EMPLOYEE_DBEntities();
         public ActionResult Index()
         {
-            var usuario = db.Usuario.Include(u => u.Canton).Include(u => u.Categoria).Include(u => u.Cita).Include(u => u.Distrito).Include(u => u.Provincia);
+            
             ViewBag.IdCategoria = new SelectList(db.Categoria, "IdCategoria", "NombreCategoria");
+            return View();
+
+           
+        }
+
+        public ActionResult index()
+        {
+            var prueba = db.Usuario.ToList();
+            ViewBag.pb = prueba;
+
             return View();
         }
 
@@ -36,9 +46,6 @@ namespace Proyecto.Controllers
             return View();
         }
 
-
-        public class ConexionBD
-        {
-
-        }
+    }
+}
 
